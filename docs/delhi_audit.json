@@ -1,0 +1,236 @@
+{
+ "question": "Is the non-detection of a temperature trend at Delhi in MERRA-2 (via NASA POWER) a processing error?",
+ "primary": {
+  "request_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M,PRECTOTCORR,GWETROOT,ALLSKY_SFC_SW_DWN&community=AG&longitude=77.21&latitude=28.61&format=JSON&start=1981&end=2025",
+  "units": "C",
+  "window": "1981-01 to 2025-12",
+  "months_used": 540,
+  "months_missing": 0,
+  "fill_values_dropped": 0,
+  "verdict": "not_detectable_yet",
+  "rank": {
+   "slope": -0.12847378640775936,
+   "ci_low": -0.2852830188679243,
+   "ci_high": 0.02823161189358253,
+   "slope_per_year": -0.012847378640775935,
+   "intercept": 25.732723106794587,
+   "tau": -0.07673331959046245,
+   "p_naive": 0.007680474055439479,
+   "p_adjusted": 0.10986079778428845,
+   "variance_inflation": 2.780080393305986
+  },
+  "least_squares": {
+   "slope": -0.11951316705475669,
+   "ci_low": -0.2748462526120096,
+   "ci_high": 0.03581991850249624,
+   "slope_per_year": -0.01195131670547567,
+   "intercept": 23.944463019420503,
+   "p_naive": 0.011338870493340855,
+   "p_adjusted": 0.13076972328827402,
+   "r1": 0.46623916867312437,
+   "r1_corrected": 0.471544643996629,
+   "n": 540,
+   "n_effective": 193.92268756915405,
+   "residual_sd": 1.4199030261710046
+  },
+  "shape": {
+   "curved": false,
+   "reverses": false,
+   "p_value": 0.053143102574267485,
+   "turning_point_year": null,
+   "turning_point_kind": null
+  }
+ },
+ "related_parameters_same_cell": {
+  "request_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M,T2M_MAX,T2M_MIN,TS&community=AG&longitude=77.21&latitude=28.61&format=JSON&start=1981&end=2025",
+  "T2M": {
+   "theil_sen_per_decade": -0.12847378640775936,
+   "interval_per_decade": [
+    -0.2852830188679243,
+    0.02823161189358253
+   ],
+   "p_rank_adjusted": 0.10986079778428845,
+   "p_rank_naive": 0.007680474055439479,
+   "least_squares_per_decade": -0.11951316705475669,
+   "p_least_squares_adjusted": 0.13076972328827402,
+   "p_least_squares_naive": 0.011338870493340855,
+   "lag1_autocorrelation": 0.46623916867312437,
+   "effective_months": 193.92268756915405,
+   "months": 540
+  },
+  "T2M_MAX": {
+   "theil_sen_per_decade": -0.2512494643403685,
+   "interval_per_decade": [
+    -0.4626780626780621,
+    -0.04063492063492477
+   ],
+   "p_rank_adjusted": 0.02018003099085262,
+   "p_rank_naive": 0.0006185812201198182,
+   "least_squares_per_decade": -0.2740091701274695,
+   "p_least_squares_adjusted": 0.00999847821721117,
+   "p_least_squares_naive": 9.30393438615006e-05,
+   "lag1_autocorrelation": 0.38701610649080126,
+   "effective_months": 236.0099432814544,
+   "months": 540
+  },
+  "T2M_MIN": {
+   "theil_sen_per_decade": 0.11311764519300843,
+   "interval_per_decade": [
+    -0.011894484412468048,
+    0.23934502923976675
+   ],
+   "p_rank_adjusted": 0.07880686861089736,
+   "p_rank_naive": 0.036471995234805155,
+   "least_squares_per_decade": 0.14118347456609937,
+   "p_least_squares_adjusted": 0.028312412794661335,
+   "p_least_squares_naive": 0.009868518647636267,
+   "lag1_autocorrelation": 0.15740215942178007,
+   "effective_months": 390.69754361441784,
+   "months": 540
+  },
+  "TS": {
+   "theil_sen_per_decade": -0.15161169505859687,
+   "interval_per_decade": [
+    -0.3390262172284646,
+    0.03440860215053563
+   ],
+   "p_rank_adjusted": 0.10942663083576412,
+   "p_rank_naive": 0.005953747586676439,
+   "least_squares_per_decade": -0.14612505529854355,
+   "p_least_squares_adjusted": 0.12383356686353499,
+   "p_least_squares_naive": 0.0077365770651655645,
+   "lag1_autocorrelation": 0.49047705807369474,
+   "effective_months": 181.94343644294204,
+   "months": 540
+  }
+ },
+ "by_season": {
+  "winter (DJF)": {
+   "least_squares_per_decade": -0.18875274483970145,
+   "p_adjusted": 0.1543282039590195,
+   "interval_per_decade": [
+    -0.4531661899037631,
+    0.0756607002243602
+   ]
+  },
+  "pre-monsoon (MAM)": {
+   "least_squares_per_decade": 0.11971014492753625,
+   "p_adjusted": 0.4373794958621486,
+   "interval_per_decade": [
+    -0.18972030131593204,
+    0.4291405911710045
+   ]
+  },
+  "monsoon (JJAS)": {
+   "least_squares_per_decade": -0.27111001317523065,
+   "p_adjusted": 0.028255204865759387,
+   "interval_per_decade": [
+    -0.5119310755549086,
+    -0.030288950795552688
+   ]
+  },
+  "post-monsoon (ON)": {
+   "least_squares_per_decade": -0.071646903820817,
+   "p_adjusted": 0.6495196821200991,
+   "interval_per_decade": [
+    -0.3908491021366416,
+    0.24755529449500754
+   ]
+  }
+ },
+ "by_period": {
+  "1981-2002": {
+   "theil_sen_per_decade": 0.3433949277280682,
+   "interval_per_decade": [
+    -0.09844789356984993,
+    0.7838709677419227
+   ],
+   "p_rank_adjusted": 0.12741371916649716,
+   "p_rank_naive": 0.014312150815110058,
+   "least_squares_per_decade": 0.3483802803122699,
+   "p_least_squares_adjusted": 0.12143705986096841,
+   "p_least_squares_naive": 0.012048415274932573,
+   "lag1_autocorrelation": 0.43226988457818716,
+   "effective_months": 102.00396893298304,
+   "months": 264
+  },
+  "2003-2025": {
+   "theil_sen_per_decade": -0.23985717129289108,
+   "interval_per_decade": [
+    -0.6588235294117653,
+    0.18064516129032562
+   ],
+   "p_rank_adjusted": 0.2776425102363742,
+   "p_rank_naive": 0.061742298496523906,
+   "least_squares_per_decade": -0.2674400194061161,
+   "p_least_squares_adjusted": 0.19310162608851403,
+   "p_least_squares_naive": 0.02688450182873218,
+   "lag1_autocorrelation": 0.46917566013381135,
+   "effective_months": 97.07418301074014,
+   "months": 276
+  }
+ },
+ "neighbouring_cells": {
+  "north": {
+   "theil_sen_per_decade": -0.14103368781140802,
+   "interval_per_decade": [
+    -0.300841423948218,
+    0.01403508771929908
+   ],
+   "p_rank_adjusted": 0.07446061330304991,
+   "p_rank_naive": 0.002932407805190884,
+   "least_squares_per_decade": -0.13125970939543685,
+   "p_least_squares_adjusted": 0.09863213361873648,
+   "p_least_squares_naive": 0.005467563198985098,
+   "lag1_autocorrelation": 0.4691711834575308,
+   "effective_months": 192.45248455121023,
+   "months": 540
+  },
+  "south": {
+   "theil_sen_per_decade": -0.11909997831273197,
+   "interval_per_decade": [
+    -0.27102725366876096,
+    0.03703703703703493
+   ],
+   "p_rank_adjusted": 0.13571465930960286,
+   "p_rank_naive": 0.01367316014966069,
+   "least_squares_per_decade": -0.11032246338293349,
+   "p_least_squares_adjusted": 0.15505918135404248,
+   "p_least_squares_naive": 0.01776362695312196,
+   "lag1_autocorrelation": 0.4623434671725048,
+   "effective_months": 195.88526806678914,
+   "months": 540
+  },
+  "east": {
+   "theil_sen_per_decade": -0.12661888835802085,
+   "interval_per_decade": [
+    -0.28719665271966377,
+    0.032280701754386215
+   ],
+   "p_rank_adjusted": 0.11510228306110229,
+   "p_rank_naive": 0.0072602681287929904,
+   "least_squares_per_decade": -0.12183855225840959,
+   "p_least_squares_adjusted": 0.12641066888357366,
+   "p_least_squares_naive": 0.009124332181113082,
+   "lag1_autocorrelation": 0.4797539827304272,
+   "effective_months": 187.19458799217117,
+   "months": 540
+  },
+  "west": {
+   "theil_sen_per_decade": -0.1354049316600527,
+   "interval_per_decade": [
+    -0.2839010189228489,
+    0.01696000000000014
+   ],
+   "p_rank_adjusted": 0.07944814029817103,
+   "p_rank_naive": 0.004830555051473784,
+   "least_squares_per_decade": -0.11787585005435551,
+   "p_least_squares_adjusted": 0.1215479719576149,
+   "p_least_squares_naive": 0.011295635013291434,
+   "lag1_autocorrelation": 0.4478876230476892,
+   "effective_months": 203.2605054983321,
+   "months": 540
+  }
+ },
+ "independent_dataset": "Not compared. This build environment can reach only power.larc.nasa.gov, and every temperature parameter served there comes from MERRA-2. A check against a station-based product such as GISTEMP or Berkeley Earth remains to be done."
+}

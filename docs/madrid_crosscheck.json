@@ -1,0 +1,338 @@
+{
+ "generated_at": "2026-11-15T18:04:16+00:00",
+ "station": {
+  "id": "SP000003195",
+  "name": "MADRID RETIRO, SP",
+  "latitude": 40.4117,
+  "longitude": -3.6781,
+  "elevation_m": 667.0
+ },
+ "source": "NOAA GHCN-Daily; the Madrid Retiro series is supplied to GHCN-D by the European Climate Assessment & Dataset (source flag E)",
+ "source_url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/SP000003195.csv",
+ "observation_type": "ground station, daily maximum and minimum air temperature",
+ "processing": [
+  "Daily mean taken as (TMAX + TMIN) / 2, in \u00b0C (GHCN-D stores tenths of a degree).",
+  "Days failing a GHCN-D quality check dropped.",
+  "Monthly mean over valid days; months with fewer than 20 valid days left missing.",
+  "Then the same pipeline as the application: calendar-month anomalies, Theil\u2013Sen rate, both autocorrelation-aware tests, expanding-record replay."
+ ],
+ "window": "1981-01 to 2025-12",
+ "months_expected": 540,
+ "station_months_missing": 3,
+ "missing_months": [
+  "2025-10",
+  "2025-11",
+  "2025-12"
+ ],
+ "station_mean": {
+  "first_year": 1981,
+  "last_year": 2025,
+  "valid_months": 537,
+  "verdict": "detected_rising",
+  "rate_per_decade": 0.38615998092816073,
+  "interval_per_decade": [
+   0.2690387351778659,
+   0.501409429760864
+  ],
+  "p_mann_kendall": 2.9678984963779784e-10,
+  "p_least_squares": 8.318740107999016e-12,
+  "least_squares_rate_per_decade": 0.4064486377896399,
+  "lag1_autocorrelation": 0.19302974353867328,
+  "sustained_detection_from": 2011,
+  "years_of_record_at_sustained_detection": 31,
+  "start_year_sensitivity": [
+   {
+    "start_year": 1981,
+    "years": 45,
+    "slope": 0.38615998092816073,
+    "ci_low": 0.2690387351778659,
+    "ci_high": 0.501409429760864,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 1986,
+    "years": 40,
+    "slope": 0.39187186727585976,
+    "ci_low": 0.25318339100346027,
+    "ci_high": 0.5318759124087553,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 1991,
+    "years": 35,
+    "slope": 0.4902727582076036,
+    "ci_low": 0.3195601577123782,
+    "ci_high": 0.6587148719953118,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 1996,
+    "years": 30,
+    "slope": 0.5701185965215293,
+    "ci_low": 0.3554617985125066,
+    "ci_high": 0.7798834951456395,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 2001,
+    "years": 25,
+    "slope": 0.637786711522289,
+    "ci_low": 0.3664293577981692,
+    "ci_high": 0.903183673469403,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 2006,
+    "years": 20,
+    "slope": 0.7877028667926518,
+    "ci_low": 0.4129292436389017,
+    "ci_high": 1.1738431578947492,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 2011,
+    "years": 15,
+    "slope": 0.6657342528735768,
+    "ci_low": 0.12188471177945215,
+    "ci_high": 1.2294019933554674,
+    "verdict": "detected_rising"
+   }
+  ]
+ },
+ "station_daily_maximum": {
+  "first_year": 1981,
+  "last_year": 2025,
+  "valid_months": 537,
+  "verdict": "detected_rising",
+  "rate_per_decade": 0.40678263905332795,
+  "interval_per_decade": [
+   0.2721687763712917,
+   0.5403030303030307
+  ],
+  "p_mann_kendall": 5.217891043911861e-09,
+  "p_least_squares": 7.632084132420072e-10,
+  "least_squares_rate_per_decade": 0.42957729679363765,
+  "lag1_autocorrelation": 0.18904418857933017,
+  "sustained_detection_from": 2014,
+  "years_of_record_at_sustained_detection": 34,
+  "start_year_sensitivity": [
+   {
+    "start_year": 1981,
+    "years": 45,
+    "slope": 0.40678263905332795,
+    "ci_low": 0.2721687763712917,
+    "ci_high": 0.5403030303030307,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 1986,
+    "years": 40,
+    "slope": 0.4656804522642878,
+    "ci_low": 0.305652173913044,
+    "ci_high": 0.6242307692307696,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 1991,
+    "years": 35,
+    "slope": 0.5559138827735473,
+    "ci_low": 0.3573589435774339,
+    "ci_high": 0.7516196615632669,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 1996,
+    "years": 30,
+    "slope": 0.6662188463372023,
+    "ci_low": 0.4266348884381282,
+    "ci_high": 0.9094399999999951,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 2001,
+    "years": 25,
+    "slope": 0.7022691355026661,
+    "ci_low": 0.39923720930231443,
+    "ci_high": 1.0241795121951145,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 2006,
+    "years": 20,
+    "slope": 0.8176988888888864,
+    "ci_low": 0.34462148521988933,
+    "ci_high": 1.2947931034482731,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 2011,
+    "years": 15,
+    "slope": 0.6009696566998854,
+    "ci_low": -0.0899999999999975,
+    "ci_high": 1.2744421052631454,
+    "verdict": "suggestive"
+   }
+  ]
+ },
+ "station_daily_minimum": {
+  "first_year": 1981,
+  "last_year": 2025,
+  "valid_months": 537,
+  "verdict": "detected_rising",
+  "rate_per_decade": 0.3808471607049013,
+  "interval_per_decade": [
+   0.2679958715217584,
+   0.4900162974280611
+  ],
+  "p_mann_kendall": 5.0146034437005496e-11,
+  "p_least_squares": 1.8656307265250977e-11,
+  "least_squares_rate_per_decade": 0.3832911887572583,
+  "lag1_autocorrelation": 0.2136170013953201,
+  "sustained_detection_from": 1995,
+  "years_of_record_at_sustained_detection": 15,
+  "start_year_sensitivity": [
+   {
+    "start_year": 1981,
+    "years": 45,
+    "slope": 0.3808471607049013,
+    "ci_low": 0.2679958715217584,
+    "ci_high": 0.4900162974280611,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 1986,
+    "years": 40,
+    "slope": 0.3334297215987478,
+    "ci_low": 0.20232110091743088,
+    "ci_high": 0.462514518593988,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 1991,
+    "years": 35,
+    "slope": 0.436131267828233,
+    "ci_low": 0.2797119142135376,
+    "ci_high": 0.5929446738232811,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 1996,
+    "years": 30,
+    "slope": 0.48185132682759646,
+    "ci_low": 0.28630303030303106,
+    "ci_high": 0.6855802469135784,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 2001,
+    "years": 25,
+    "slope": 0.5612862067066803,
+    "ci_low": 0.3240263157894785,
+    "ci_high": 0.799337799043069,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 2006,
+    "years": 20,
+    "slope": 0.7544593128390571,
+    "ci_low": 0.42127810650887193,
+    "ci_high": 1.0779999999999994,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 2011,
+    "years": 15,
+    "slope": 0.7500656934306613,
+    "ci_low": 0.27516952380951804,
+    "ci_high": 1.2049312169312207,
+    "verdict": "detected_rising"
+   }
+  ]
+ },
+ "merra2_cell": {
+  "first_year": 1981,
+  "last_year": 2025,
+  "valid_months": 540,
+  "verdict": "detected_rising",
+  "rate_per_decade": 0.33157020108069896,
+  "interval_per_decade": [
+   0.21244655581947894,
+   0.4533333333333378
+  ],
+  "p_mann_kendall": 1.0875379073729131e-07,
+  "p_least_squares": 9.011673498769936e-09,
+  "least_squares_rate_per_decade": 0.3483106595015758,
+  "lag1_autocorrelation": 0.22515679457677995,
+  "sustained_detection_from": 2016,
+  "years_of_record_at_sustained_detection": 36,
+  "start_year_sensitivity": [
+   {
+    "start_year": 1981,
+    "years": 45,
+    "slope": 0.33157020108069896,
+    "ci_low": 0.21244655581947894,
+    "ci_high": 0.4533333333333378,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 1986,
+    "years": 40,
+    "slope": 0.3661026991441758,
+    "ci_low": 0.21943999999999989,
+    "ci_high": 0.5166666666666665,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 1991,
+    "years": 35,
+    "slope": 0.49291967661669295,
+    "ci_low": 0.3152073732718761,
+    "ci_high": 0.6731589537223228,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 1996,
+    "years": 30,
+    "slope": 0.5663025488248911,
+    "ci_low": 0.344132231404953,
+    "ci_high": 0.7807547169811178,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 2001,
+    "years": 25,
+    "slope": 0.5994696132596675,
+    "ci_low": 0.3206250000000084,
+    "ci_high": 0.8803200000000395,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 2006,
+    "years": 20,
+    "slope": 0.7601639344262361,
+    "ci_low": 0.3772925764192167,
+    "ci_high": 1.1631111111111112,
+    "verdict": "detected_rising"
+   },
+   {
+    "start_year": 2011,
+    "years": 15,
+    "slope": 0.7430525030525154,
+    "ci_low": 0.1837837837837728,
+    "ci_high": 1.2875471698112937,
+    "verdict": "detected_rising"
+   }
+  ]
+ },
+ "monthly_anomaly_correlation": 0.9641521893012943,
+ "paired_months": 537,
+ "station_minus_merra2": {
+  "rate_per_decade": 0.055929795416090555,
+  "interval_per_decade": [
+   0.017249289772724316,
+   0.09522085048010898
+  ],
+  "p_mann_kendall": 0.004549451507398777,
+  "p_least_squares": 0.002224616784608516
+ }
+}

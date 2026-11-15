@@ -1,0 +1,286 @@
+.instrument {
+  position: relative;
+  width: 100%;
+}
+
+.instrument-svg {
+  display: block;
+  overflow: visible;
+  touch-action: pan-y;
+}
+
+.plot-label {
+  font-family: var(--narrow);
+  font-size: 15px;
+  font-weight: 600;
+  fill: var(--chalk);
+}
+
+.plot-sub {
+  font-family: var(--sans);
+  font-size: 12.5px;
+  fill: var(--chalk-faint);
+}
+
+.plot-unit,
+.tick,
+.zone-label,
+.zero-label {
+  font-family: var(--mono);
+  font-size: 12px;
+  fill: var(--chalk-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.grid {
+  stroke: var(--rule);
+  stroke-width: 1;
+  opacity: 0.55;
+}
+
+.grid-zero {
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+}
+
+.grid-year {
+  stroke: var(--rule);
+  stroke-width: 1;
+  opacity: 0.35;
+}
+
+.axis {
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+}
+
+.hatch-line {
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+  opacity: 0.6;
+}
+
+.usual-cycle {
+  fill: none;
+  stroke: var(--quiet);
+  stroke-width: 1;
+}
+
+.monthly {
+  fill: none;
+  stroke: var(--data);
+  stroke-width: 1;
+  stroke-linejoin: round;
+}
+
+.smooth {
+  fill: none;
+  stroke: var(--chalk);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.trend-line {
+  fill: none;
+  stroke: var(--paper);
+  stroke-width: 1.2;
+  stroke-dasharray: 7 4;
+}
+
+.trend-wedge {
+  fill: var(--quiet-wash);
+  stroke: none;
+}
+
+.band {
+  stroke-width: 1;
+}
+
+.band-quiet {
+  fill: var(--quiet-wash);
+  stroke: var(--quiet);
+  stroke-opacity: 0.75;
+}
+
+.band-mask {
+  fill: var(--ink-0);
+  stroke: none;
+}
+
+.band-signal {
+  fill: var(--signal-wash);
+  stroke: var(--signal);
+}
+
+.band-centre {
+  fill: none;
+  stroke: var(--chalk);
+  stroke-width: 1.8;
+}
+
+.zero-line {
+  stroke: var(--chalk);
+  stroke-width: 1.3;
+  stroke-dasharray: 4 4;
+}
+
+.gauge-bar {
+  stroke: var(--glacier);
+  stroke-width: 2;
+}
+
+.gauge-label {
+  font-family: var(--sans);
+  font-size: 12px;
+  fill: var(--chalk-dim);
+  paint-order: stroke;
+  stroke: var(--void);
+  stroke-width: 4px;
+}
+
+.gauge-reading {
+  font-family: var(--narrow);
+  font-size: 15px;
+  font-weight: 600;
+  fill: var(--glacier);
+  paint-order: stroke;
+  stroke: var(--void);
+  stroke-width: 4px;
+}
+
+.gauge-on .gauge-bar {
+  stroke: var(--cinnabar);
+}
+
+.gauge-on .gauge-reading {
+  fill: var(--cinnabar);
+}
+
+.zero-label {
+  fill: var(--chalk);
+}
+
+.stamp {
+  opacity: 0;
+  transition: opacity 500ms var(--ease);
+}
+
+.stamp-on {
+  opacity: 1;
+}
+
+.stamp-rule {
+  stroke: var(--signal);
+  stroke-width: 1;
+}
+
+.stamp-dot {
+  fill: var(--signal);
+}
+
+.stamp-title {
+  font-family: var(--sans);
+  font-size: 12px;
+  fill: var(--cinnabar);
+  paint-order: stroke;
+  stroke: var(--void);
+  stroke-width: 4px;
+}
+
+.stamp-year {
+  font-family: var(--mono);
+  font-size: 20px;
+  font-weight: 500;
+  fill: var(--cinnabar);
+  paint-order: stroke;
+  stroke: var(--void);
+  stroke-width: 5px;
+}
+
+.ruler {
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+}
+
+.ruler-seen {
+  stroke: var(--paper-dim);
+}
+
+.track {
+  fill: var(--rule);
+}
+
+.track-seen {
+  fill: var(--paper);
+}
+
+.cursor-line {
+  stroke: var(--paper);
+  stroke-width: 1;
+}
+
+.cursor-handle {
+  fill: var(--paper);
+}
+
+.cursor-flag {
+  fill: var(--paper);
+}
+
+.cursor-year {
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 500;
+  fill: var(--void);
+}
+
+.cursor-detected .cursor-flag {
+  fill: var(--cinnabar);
+}
+
+.cursor-focused .cursor-handle {
+  stroke: var(--signal);
+  stroke-width: 2;
+}
+
+.cursor-focused .cursor-flag {
+  stroke: var(--signal);
+  stroke-width: 2;
+}
+
+.scrub-surface {
+  fill: transparent;
+  cursor: ew-resize;
+}
+
+.sr-slider {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 24px;
+  opacity: 0;
+  pointer-events: none;
+  margin: 0;
+}
+
+.strip {
+  display: block;
+  overflow: visible;
+}
+
+.strip .band-quiet {
+  stroke-opacity: 0.6;
+}
+
+.measure {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+.measure > svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

@@ -1,0 +1,337 @@
+{
+ "generated_at": "2026-11-15T17:33:55+00:00",
+ "seed": 20261115,
+ "software": {
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "pymannkendall": "1.4.3"
+ },
+ "note": "Simulated monthly records with a seasonal cycle, a steady linear trend and AR(1) noise, using the rate, noise and autocorrelation fitted to the real Madrid record. Each is run through the same pipeline as the app.",
+ "studies": [
+  {
+   "variable": "temperature",
+   "place": "Madrid",
+   "assumed_rate_per_decade": 0.3483106595015758,
+   "assumed_noise_sd": 1.4112149503866795,
+   "assumed_autocorrelation": 0.22867647453660794,
+   "units": "\u00b0C",
+   "record_years": 45,
+   "runs": 500,
+   "endpoint_step_years": 1,
+   "curve": [
+    {
+     "years": 10,
+     "detected_share": 0.066
+    },
+    {
+     "years": 11,
+     "detected_share": 0.07
+    },
+    {
+     "years": 12,
+     "detected_share": 0.104
+    },
+    {
+     "years": 13,
+     "detected_share": 0.13
+    },
+    {
+     "years": 14,
+     "detected_share": 0.152
+    },
+    {
+     "years": 15,
+     "detected_share": 0.178
+    },
+    {
+     "years": 16,
+     "detected_share": 0.216
+    },
+    {
+     "years": 17,
+     "detected_share": 0.232
+    },
+    {
+     "years": 18,
+     "detected_share": 0.288
+    },
+    {
+     "years": 19,
+     "detected_share": 0.334
+    },
+    {
+     "years": 20,
+     "detected_share": 0.394
+    },
+    {
+     "years": 21,
+     "detected_share": 0.43
+    },
+    {
+     "years": 22,
+     "detected_share": 0.492
+    },
+    {
+     "years": 23,
+     "detected_share": 0.536
+    },
+    {
+     "years": 24,
+     "detected_share": 0.604
+    },
+    {
+     "years": 25,
+     "detected_share": 0.656
+    },
+    {
+     "years": 26,
+     "detected_share": 0.708
+    },
+    {
+     "years": 27,
+     "detected_share": 0.756
+    },
+    {
+     "years": 28,
+     "detected_share": 0.828
+    },
+    {
+     "years": 29,
+     "detected_share": 0.848
+    },
+    {
+     "years": 30,
+     "detected_share": 0.886
+    },
+    {
+     "years": 31,
+     "detected_share": 0.916
+    },
+    {
+     "years": 32,
+     "detected_share": 0.938
+    },
+    {
+     "years": 33,
+     "detected_share": 0.958
+    },
+    {
+     "years": 34,
+     "detected_share": 0.968
+    },
+    {
+     "years": 35,
+     "detected_share": 0.98
+    },
+    {
+     "years": 36,
+     "detected_share": 0.984
+    },
+    {
+     "years": 37,
+     "detected_share": 0.986
+    },
+    {
+     "years": 38,
+     "detected_share": 0.988
+    },
+    {
+     "years": 39,
+     "detected_share": 0.992
+    },
+    {
+     "years": 40,
+     "detected_share": 0.992
+    },
+    {
+     "years": 41,
+     "detected_share": 0.996
+    },
+    {
+     "years": 42,
+     "detected_share": 0.996
+    },
+    {
+     "years": 43,
+     "detected_share": 1.0
+    },
+    {
+     "years": 44,
+     "detected_share": 1.0
+    },
+    {
+     "years": 45,
+     "detected_share": 1.0
+    },
+    {
+     "years": 46,
+     "detected_share": 1.0
+    },
+    {
+     "years": 47,
+     "detected_share": 1.0
+    },
+    {
+     "years": 48,
+     "detected_share": 1.0
+    },
+    {
+     "years": 49,
+     "detected_share": 1.0
+    },
+    {
+     "years": 50,
+     "detected_share": 1.0
+    },
+    {
+     "years": 51,
+     "detected_share": 1.0
+    },
+    {
+     "years": 52,
+     "detected_share": 1.0
+    },
+    {
+     "years": 53,
+     "detected_share": 1.0
+    },
+    {
+     "years": 54,
+     "detected_share": 1.0
+    },
+    {
+     "years": 55,
+     "detected_share": 1.0
+    },
+    {
+     "years": 56,
+     "detected_share": 1.0
+    },
+    {
+     "years": 57,
+     "detected_share": 1.0
+    },
+    {
+     "years": 58,
+     "detected_share": 1.0
+    },
+    {
+     "years": 59,
+     "detected_share": 1.0
+    },
+    {
+     "years": 60,
+     "detected_share": 1.0
+    }
+   ],
+   "years_for_50_percent": 23,
+   "years_for_80_percent": 28,
+   "years_for_90_percent": 31,
+   "weatherhead_years_90_percent": 30.537059629532845,
+   "observed_verdict": "detected_rising",
+   "observed_sustained_detection_at_years": 36,
+   "simulated_records_of_same_length": {
+    "share_with_sustained_detection": 1.0,
+    "median_years": 24.0,
+    "p10_years": 16.0,
+    "p90_years": 31.100000000000023,
+    "share_sustained_by_observed_length": 0.98
+   }
+  },
+  {
+   "variable": "precipitation",
+   "place": "Madrid",
+   "assumed_rate_per_decade": 0.050952163759134986,
+   "assumed_noise_sd": 0.8997111174503106,
+   "assumed_autocorrelation": 0.15193168845404512,
+   "units": "mm/day",
+   "record_years": 45,
+   "runs": 500,
+   "endpoint_step_years": 5,
+   "curve": [
+    {
+     "years": 10,
+     "detected_share": 0.052
+    },
+    {
+     "years": 15,
+     "detected_share": 0.052
+    },
+    {
+     "years": 20,
+     "detected_share": 0.068
+    },
+    {
+     "years": 25,
+     "detected_share": 0.072
+    },
+    {
+     "years": 30,
+     "detected_share": 0.114
+    },
+    {
+     "years": 35,
+     "detected_share": 0.154
+    },
+    {
+     "years": 40,
+     "detected_share": 0.222
+    },
+    {
+     "years": 45,
+     "detected_share": 0.308
+    },
+    {
+     "years": 50,
+     "detected_share": 0.392
+    },
+    {
+     "years": 55,
+     "detected_share": 0.51
+    },
+    {
+     "years": 60,
+     "detected_share": 0.596
+    },
+    {
+     "years": 65,
+     "detected_share": 0.69
+    },
+    {
+     "years": 70,
+     "detected_share": 0.796
+    },
+    {
+     "years": 75,
+     "detected_share": 0.872
+    },
+    {
+     "years": 80,
+     "detected_share": 0.934
+    },
+    {
+     "years": 85,
+     "detected_share": 0.966
+    },
+    {
+     "years": 90,
+     "detected_share": 0.996
+    },
+    {
+     "years": 95,
+     "detected_share": 0.998
+    },
+    {
+     "years": 100,
+     "detected_share": 0.998
+    }
+   ],
+   "years_for_50_percent": 55,
+   "years_for_80_percent": 75,
+   "years_for_90_percent": 80,
+   "weatherhead_years_90_percent": 77.26240571182872,
+   "observed_verdict": "not_detectable_yet",
+   "observed_sustained_detection_at_years": null
+  }
+ ]
+}

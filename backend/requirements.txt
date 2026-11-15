@@ -1,0 +1,7 @@
+fastapi==0.162.7
+uvicorn[standard]==0.54.0
+numpy==2.5.4
+scipy==1.18.1
+pymannkendall==1.4.3
+httpx==0.28.1
+pydantic==2.14.3

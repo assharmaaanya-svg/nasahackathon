@@ -1,0 +1,39 @@
+:root {
+  --void: #05080c;
+  --basalt: #0b1118;
+  --slate: #131c26;
+  --rule: #1f2b37;
+  --rule-strong: #3a4f61;
+  --chalk: #f4f5f0;
+  --chalk-dim: #ccd6da;
+  --chalk-faint: #a3b8c2;
+  --mineral: #d3d9d6;
+  --sand: #d9cca6;
+  --glacier: #8ec8e8;
+  --glacier-wash: rgba(142, 200, 232, 0.16);
+  --cinnabar: #ff7352;
+  --cinnabar-wash: rgba(255, 115, 82, 0.24);
+  --alert: #e2b556;
+
+  --ink-0: var(--void);
+  --ink-1: var(--basalt);
+  --ink-2: var(--slate);
+  --paper: var(--chalk);
+  --paper-dim: var(--chalk-dim);
+  --paper-faint: var(--chalk-faint);
+  --data: var(--mineral);
+  --signal: var(--cinnabar);
+  --signal-wash: var(--cinnabar-wash);
+  --quiet: var(--glacier);
+  --quiet-wash: var(--glacier-wash);
+
+  --sans: "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --narrow: "Barlow Semi Condensed", "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --serif: var(--narrow);
+
+  --gutter: clamp(16px, 2.6vw, 40px);
+  --measure: 64ch;
+  --header: 52px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
